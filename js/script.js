@@ -27,7 +27,7 @@ for (let i = 0; i < 3; i++) {
 }
 Promise.all(listP).then(results => {
   for (let i = 0; i < 3; i++) {
-    listString += `<i>${results[i]}</i>`
+    listString += `<i class="list-group-item">${results[i]}</i>`
   }
-  document.getElementById("list").innerHTML=listString
+  document.getElementById('list').innerHTML = listString
 })
